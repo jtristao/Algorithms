@@ -3,7 +3,33 @@
 #include <time.h>
 #include "vector.h"
 
-int vector_shuffle(int *vector, int n){
+int vector_reversed(int *vector, int n){
+	srand(time(NULL));
+	if(vector == NULL)
+		return 0;
+	else{
+		for(int i = 0; i < n; i++){
+			*(vector + i) = n-i;
+		}
+	}
+	
+	return 1;
+}
+
+int vector_sorted(int *vector, int n){
+	srand(time(NULL));
+	if(vector == NULL)
+		return 0;
+	else{
+		for(int i = 0; i < n; i++){
+			*(vector + i) = i;
+		}
+	}
+	
+	return 1;
+}
+
+int vector_random(int *vector, int n){
 	srand(time(NULL));
 	if(vector == NULL)
 		return 0;

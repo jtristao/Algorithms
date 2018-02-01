@@ -1,0 +1,8 @@
+# Compiled Object Files
+*.o
+
+# Executable
+a.out
+
+# vim swap files
+*.swp

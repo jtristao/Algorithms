@@ -1,6 +1,6 @@
 #ifndef _UTILS_H_
 #define _UTILS_H_
 
-void swap(int *vector, int a, int b);
+void swap(void *a, void *b, size_t size);
 
 #endif
