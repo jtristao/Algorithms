@@ -1,6 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "utils.h"
+#include <string.h>
+#include "bubble_sort.h"
+
+void swap(void *a, void *b, size_t size){
+	void *aux;
+
+	aux = malloc(size);	
+	memcpy(aux, a, size);
+	memcpy(a, b, size);
+	memcpy(b, aux, size);
+	
+	free(aux);
+}
 
 void bubble_sort(void *vector, size_t nmemb, size_t size, int(*compar)(const void *, const void *)){
 	for(int j = 1; j < nmemb; j++)
