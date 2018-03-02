@@ -1,0 +1,7 @@
+#Notes
+Starting to define a model to develop:
+	-Use framework to code/test using integers typer.
+	-Use especific folder to store generic program.
+
+TODO:
+	-Define how to include analisys and compare the algorithms efficiently.
