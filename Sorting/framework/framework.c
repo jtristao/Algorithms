@@ -3,6 +3,7 @@
 #include "vector.h"
 
 #include "bubble_sort.h"
+#include "selection_sort.h"
 
 enum{
 	PROGNAME,
@@ -11,6 +12,12 @@ enum{
 	ALGORITHM,
 	NARGS,
 };
+
+int compar(const void *a, const void *b){
+	int j = *(int *)a;
+	int k = *(int *)b;
+	return j - k;
+}
 
 int main(int argc, char *argv[]){
 	int n, a_order, alg, *vector;
@@ -42,9 +49,12 @@ int main(int argc, char *argv[]){
 	
 	switch(alg){
 		case 0:
-			bubble_sort(vector, n);
+			bubble_sort(vector, n, sizeof(int), compar);
 			break;
-		deafult:
+		case 1:
+			selection_sort(vector, n, sizeof(int), compar);
+			break;
+		default:
 			printf("Invalid Algorithm");
 			exit(0);
 	}	
