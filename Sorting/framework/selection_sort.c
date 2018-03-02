@@ -3,17 +3,7 @@
 #include <string.h>
 
 #include "selection_sort.h"
-
-void swap(void *a, void *b, size_t size){
-	void *aux;
-
-	aux = malloc(size);	
-	memcpy(aux, a, size);
-	memcpy(a, b, size);
-	memcpy(b, aux, size);
-	
-	free(aux);
-}
+#include "utils.h"
 
 void selection_sort(void *base, size_t nmemb, size_t size, int(*compar)(const void *, const void *)){
 	int min;

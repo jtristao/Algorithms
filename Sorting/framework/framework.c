@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "vector.h"
+#include "utils.h"
 
 #include "bubble_sort.h"
 #include "selection_sort.h"
@@ -23,7 +25,9 @@ int main(int argc, char *argv[]){
 	int n, a_order, alg, *vector;
 	
 	if(argc != NARGS){
-		printf("%s usage:\n\t size of vector;\n\t vector: (0)sorted, (1)reversed, (2)random;\n\t algorithm: (0)bubble_sort\n", argv[PROGNAME]);
+		printf("%s usage:\n\t size of vector;\n", argv[PROGNAME]);
+		printf("\t vector: (0)sorted, (1)reversed, (2)random;\n");
+		printf("\t algorithm: (0)bubble_sort, (1)selection_sort;\n") ;
 		exit(0);
 	} 
 
