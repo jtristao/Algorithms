@@ -1,0 +1,18 @@
+Build vector function:
+	Create random vector
+	Create sorted vector
+	Create sorted backwards vector
+	Print vector
+
+Build Framework:
+	Program to call all sorting functions
+	Output the time
+
+Build sorting algorithms:
+	Wright the algorithm
+	Test the algotihm
+	Develop time/space complexity
+	Add observations
+
+Compare results through the framework:
+	Plot results
