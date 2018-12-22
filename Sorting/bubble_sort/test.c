@@ -20,12 +20,12 @@ void swap(int *vector, int i, int j){
 }
 
 void bubble_sort(int *vector, int n){
-	for(int i = 0; i < n-1; i++){
-		for(int j = i; j <= n; j++){
+	for(int i = 1; i < n; i++){
+		for(int j = 0; j < n-i; j++){
 			/* Compare function */
-			if(vector[i] > vector[j]){
+			if(vector[j] > vector[j+1]){
 				swaps++;
-				swap(vector, i, j);
+				swap(vector, j, j+1);
 			}
 			comp++;
 		}

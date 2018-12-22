@@ -1,0 +1,38 @@
+
+
+*******************************************************************************
+Sat Dec 22 12:12:58 2018
+
+
+FIT:    data read from "results_bubble_random.txt"
+        format = z
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*x*x + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 7.2275420356e+17   0.00e+00  1.10e+08    1.000000e+00   1.000000e+00   1.000000e+00
+  12 1.7192548795e-03  -3.06e-06  1.10e-04    3.850147e-09  -7.162366e-06   1.955052e-02
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.00171925
+rel. change during last iteration : -3.05613e-11
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0100565
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000101133
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 3.85015e-09      +/- 7.59e-11     (1.971%)
+b               = -7.16237e-06     +/- 1.641e-06    (22.91%)
+c               = 0.0195505        +/- 0.007482     (38.27%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.971  1.000 
+c               0.781 -0.889  1.000 
