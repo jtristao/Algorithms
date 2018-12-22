@@ -3,3 +3,5 @@ framework:
 	- use the same array to order every time?
 	- add string + syntax ? // Deal with mispelled words
 	- Perhaps, break framwwork in two functions, one for preparing the array, other to apply the algorithm
+
+How to obtain the number of comparations and swaps?
